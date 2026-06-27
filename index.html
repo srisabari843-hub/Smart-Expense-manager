@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Expense Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+
+            
+<body>       
+    <div class="container">
+        <header>
+            <h1>Smart Expense Manager</h1>
+            <button id="themetoggle">🌙</button>
+        </header> 
+
+      <section class="summary">
+         <div>Balance: ₹<span id="balance">0</span></div>
+        <div>Income: ₹<span id="income">0</span></div>
+        <div>Expense:₹<span id="expense">0</span></div>
+
+        <section class="controls">
+            <input typre="text" id="search" placeholder="Search transations...">
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>                 
+        </section>
+       
+     
+        <form id="form">
+            <input type="text" id="desc" placeholder="Desciption" required>
+            <input type="number" id="amount" placeholder="Amount(+income,-expense)" required>
+
+            <select id="category">
+                <option>Food</option>
+                <option>Travel</option>
+                <option>Shopping</option>
+                <option>salary</option>
+                <option>Other</option>
+            </select>
+
+            <button>AddTransaction</button>
+        </form>
+
+    <ul id="list"></ul>
+    </div>
+</body>
+</html>
