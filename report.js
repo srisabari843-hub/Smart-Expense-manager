@@ -17,7 +17,7 @@ function getMonthlyReport(transactions){
     const savings=income-expense;
 
     return {
-        income,
+        income,  
         expense,
         savings
     };

@@ -4,6 +4,6 @@ const storage={
     },
 
     save(data){
-        localStorage.setTems("trasactions",JSON.stringify(data));
+        localStorage.setItem("transactions",JSON.stringify(data));
     } 
 }   
