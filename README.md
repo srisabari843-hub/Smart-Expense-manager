@@ -24,6 +24,15 @@ Project Structures
     report.js
     app.js
 
+File DEscription
+  index.html==>Page Structure: header,summary bar, search/filter controls,add-transaction form,and transaction list.
+  Style.css==>Visual Styling:layout,spacing,and appearance of list  and form.
+  utils.js==>pure Helper functions:calculateSummary() totals income/expense/balance,filterData() filterData() filter by type.
+  stoarge.js==>Persistence layer:storage.get() and storage.save() wrap loca;Storage to load/save trannsactions.
+  report.js==>Monthly reporting:getMonthlyReport() totals this month's transactions,showReport() logos it to console.
+
+  
+
 Getting Started
     1 File Setup
       Place all seven files (index.html,style.css,utils.js,app.js,storage.js,report.js) in same folder.
@@ -41,5 +50,15 @@ How To Use
   =>Click the next to Any transaction to delete it.
   =>click to toggle dark mode.
   =>Open the browser console and run showMothlyReport() to see this months's income,expense,and savings.
+
+Quick Test
+  => Add "Salary July" / ₹50000/ salary,then "Groceries"/ ₹-1200 / food.Expect Income  ₹50000,Expense  ₹1200,Balance  ₹48800,both rows listed Correctly,and data still present after refreshing the page.
+
+Tech Stack
+    HTML
+    CSS
+    JSS
+
+
 
 
